@@ -1,0 +1,41 @@
+.logo-container
+{
+background: #FFF;
+margin-top: 0;
+max-width: none;
+}
+.logo-primary {
+    width: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: 50%;
+}
+.poAlert{
+    visibility: hidden;
+}
+.hlText{
+    background: #74b1ea;
+    text-align:center;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    width: 50%;
+    margin: 0 auto;
+}
+.ccImg img
+{	
+    min-width:100px;
+    max-width:10%;
+}
+.ccImg
+{  
+   text-align:center;
+}
+.headTxt
+{
+font-weight: 500;
+    font-size: 3rem;
+    color: #27c1fc;
+}
+
+::-webkit-input-placeholder{opacity: .5; color: #000;}
+::placeholder{opacity: .5; color: #000;}

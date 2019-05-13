@@ -1,0 +1,18 @@
+.logo-container
+{
+background: #FFF;
+margin-top: 0;
+}
+.logo-primary {
+    width: 30%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.poAlert{
+    visibility: hidden;
+}
+h3.hlText{
+    background: #74b1ea;
+    width: 40%;
+    align:"center";
+}

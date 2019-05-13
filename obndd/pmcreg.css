@@ -1,0 +1,25 @@
+body { background: transparent!important; }
+.noPayAlert{
+    visibility: hidden;
+}
+.exp1{
+    visibility: hidden;
+}
+
+.logo-primary {
+    width: 13%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.logo-container {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+    background: white;
+}
+
+.hiddenfield{
+    visibility: hidden;
+}

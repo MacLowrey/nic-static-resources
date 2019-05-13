@@ -1,0 +1,45 @@
+/*
+.logo-container
+{
+background: #FFF;
+margin-top: 0;
+}
+*/
+.logo-primary {
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.poAlert{
+    visibility: hidden;
+}
+h3.hlText{
+    background: #74b1ea;
+    width: 40%;
+    align:"center";
+}
+.container ul{
+  list-style-position: inside;
+}
+
+.testQuestion legend{
+    width: 100%;
+    text-align: left !important;
+}
+
+.testQuestion label{
+	    display: inline;
+	      /*  margin: 0 15px 0 30px; */
+	        margin-left: 15px;
+		margin-right: 30px;
+}
+
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+   /* IE10+ specific styles go here */  
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio]{
+   margin-right: 30px;
+   margin-left: 30px;
+}
+}

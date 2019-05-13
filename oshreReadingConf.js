@@ -1,0 +1,47 @@
+var ddID = "#MainContent_Main_Wizard1_ctl00_Page1Group1DropDownList4";
+console.log("Hello World!");
+//Disable Input until Credit Card is Selected
+function disableStuff(){
+$(".form-control").prop('disabled', true);
+$(ddID).prop('disabled', false);
+};
+$(document).ready(function () {
+    if(window.location.href.indexOf("readingconferenceregistrationpo") > -1) {
+       console.log("PO Form");
+    }
+	if($(ddID).length)
+	{
+		disableStuff();
+	}
+
+
+	if($(ddID).find("option:selected").text() === "Credit Card")
+	{
+		$(".form-control").prop('disabled', false);
+	}if($(ddID).find("option:selected").text() === "Purchase Order")
+        {
+		$(".poAlert").css("visibility","visible");
+        }
+});
+//show Purchase Order Link
+$(ddID).change(function(){
+	var changed = $(this).find("option:selected").text();
+	//console.log(changed);
+	if(changed === "Purchase Order")
+	{
+		//console.log("i ran");
+		$(".poAlert").css("visibility","visible");
+		$(".contname").css("visibility","visible");
+		disableStuff();
+	}
+	else if(changed ==="Credit Card"){
+		$(".form-control").prop('disabled', false);
+		$(".poAlert").css("visibility","hidden");
+
+	}
+	else{
+		$(".poAlert").css("visibility","hidden");
+		disableStuff();
+	}
+
+});
